@@ -8,7 +8,7 @@ import Nav from "../components/nav";
 import Moment from "react-moment";
 import Seo from "../components/seo";
 
-const Home = ({ articles, categories, homepage }) => {
+const Home = ({ articles, homepage }) => {
 	console.log(articles);
 	//console.log(categories);
 	const heroArticle = articles.data.at(-1);

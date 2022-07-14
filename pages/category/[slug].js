@@ -5,7 +5,7 @@ import Seo from "../../components/seo";
 import { fetchAPI } from "../../lib/api";
 import { getStrapiMedia } from "../../lib/media";
 
-const Category = ({ category, categories }) => {
+const Category = ({ category}) => {
     //console.log(category.attributes.articles.data)
     const seo = {
         metaTitle: category.attributes.name,
