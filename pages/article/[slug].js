@@ -5,10 +5,10 @@ import { getStrapiMedia } from "../../lib/media";
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
 import Seo from "../../components/seo";
+import Footer from "../../components/footer";
 
 const Article = ({ article }) => {
-	//console.log(article);
-
+	
 	const seo = {
 		metaTitle: article.attributes.title,
 		metaDescription: article.attributes.description,
@@ -83,8 +83,9 @@ const Article = ({ article }) => {
 								<div className='flex flex-col  py-4 md:py-0 md:px-40 justify-center leading-relaxed'>
 									<ReactMarkdown
 										className='text-sm md:text-base indent-6 md:indent-8 text-justify'
-										children={article.attributes.content}
-									/>
+										
+									>{article.attributes.content}
+										</ReactMarkdown>
 								</div>
 							</div>
 							<div className='flex justify-center tracking-widest text-sm'>
@@ -94,11 +95,7 @@ const Article = ({ article }) => {
 					</div>
 				</div>
 
-				<footer>
-					<div className='flex justify-center p-8 text-xs text-gray-400 dark:text-gray-600'>
-						<p>feito com ❤️ por vinicius leal.</p>
-					</div>
-				</footer>
+				<Footer />
 			</div>
 		</>
 	);

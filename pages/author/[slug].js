@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Moment from "react-moment";
+import Footer from "../../components/footer";
 import Nav from "../../components/nav";
 import Seo from "../../components/seo";
 import { fetchAPI } from "../../lib/api";
@@ -118,11 +119,9 @@ const Writer = ({ writer }) => {
 							</Link>
 						</div>
 					</div>
-					<footer>
-						<div className='flex justify-center p-8 text-xs text-gray-400 dark:text-gray-600'>
-							<p>feito com ❤️ por vinicius leal.</p>
-						</div>
-					</footer>
+
+					<Footer/>
+					
 				</div>
 			</div>
 		</>

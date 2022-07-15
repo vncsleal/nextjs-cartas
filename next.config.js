@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+	reactStrictMode: true,
+};
 
 module.exports = {
-  reactStrictMode: true,
-  images: {
-    loader: "default",
-    domains: ["localhost"],
-  },
+	reactStrictMode: true,
+	images: {
+		loader: "default",
+		domains: ['res.cloudinary.com'],
+	},
 };
