@@ -32,7 +32,7 @@ const Home = ({ articles, homepage }) => {
 								<div className='flex justify-between py-2'>
 									<p>{num}</p>
 									<Link
-										href={`/category/${heroArticle.attributes.category.data.attributes.name}`}
+										href={`/category/${heroArticle.attributes.category.data.attributes.slug}`}
 									>
 										<a>
 											<p>
