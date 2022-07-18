@@ -78,7 +78,7 @@ const Category = ({ category }) => {
 														• em
 													</p>
 													<Link
-														href={`/category/${article.attributes.category.data.attributes.name}`}
+														href={`/category/${article.attributes.category.data.attributes.slug}`}
 													>
 														<a>
 															<p className='text-gray-400 font-bold dark:text-gray-500'>

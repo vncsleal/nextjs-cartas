@@ -144,7 +144,7 @@ const Home = ({ articles, homepage }) => {
 											</Link>
 											<p className='text-gray-400 dark:text-gray-500'>• em</p>
 											<Link
-												href={`/category/${leftArticle.attributes.category.data.attributes.name}`}
+												href={`/category/${leftArticle.attributes.category.data.attributes.slug}`}
 											>
 												<a>
 													<p className='text-gray-400 font-bold dark:text-gray-500'>
@@ -216,7 +216,7 @@ const Home = ({ articles, homepage }) => {
 											</Link>
 											<p className='text-gray-400 dark:text-gray-500'>• em</p>
 											<Link
-												href={`/category/${rightArticle.attributes.category.data.attributes.name}`}
+												href={`/category/${rightArticle.attributes.category.data.attributes.slug}`}
 											>
 												<a>
 													<p className='text-gray-400 font-bold dark:text-gray-500'>
@@ -294,7 +294,7 @@ const Home = ({ articles, homepage }) => {
 												</Link>
 												<p className='text-gray-400 dark:text-gray-500'>• em</p>
 												<Link
-													href={`/category/${article.attributes.category.data.attributes.name}`}
+													href={`/category/${article.attributes.category.data.attributes.slug}`}
 												>
 													<a>
 														<p className='text-gray-400 font-bold dark:text-gray-500'>

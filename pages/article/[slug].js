@@ -31,7 +31,7 @@ const Article = ({ article }) => {
 								<div className='flex justify-between py-2'>
 									<p>{num}</p>
 									<Link
-										href={`/category/${article.attributes.category.data.attributes.name}`}
+										href={`/category/${article.attributes.category.data.attributes.slug}`}
 									>
 										<a>
 											<p>{article.attributes.category.data.attributes.name}</p>
